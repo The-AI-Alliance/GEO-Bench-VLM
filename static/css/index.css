@@ -1,0 +1,374 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  
+  .footer .icon-link {
+      font-size: 25px;
+      color: #000;
+  }
+  
+  .link-block a {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  
+  .dnerf {
+    font-variant: small-caps;
+  }
+  
+  
+  .teaser .hero-body {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+  
+  .teaser {
+    font-family: 'Google Sans', sans-serif;
+  }
+  
+  
+  .publication-title {
+  }
+  
+  .publication-banner {
+    max-height: parent;
+  
+  }
+  
+  .publication-banner video {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    object-fit: fit;
+  }
+  
+  .publication-header .hero-body {
+  }
+  
+  .publication-title {
+      font-family: 'Google Sans', sans-serif;
+  }
+  
+  .publication-authors {
+      font-family: 'Google Sans', sans-serif;
+  }
+  
+  .publication-venue {
+      color: #555;
+      width: fit-content;
+      font-weight: bold;
+  }
+  
+  .publication-awards {
+      color: #ff3860;
+      /* width: fit-content; */
+      font-weight: bolder;
+  }
+  
+  .title + .publication-authors,
+  .subtitle + .publication-authors {
+      margin-top: -1.25rem;
+  }
+  
+  .publication-authors a {
+     color: hsl(204, 86%, 53%) !important;
+  }
+  
+  .publication-authors a:hover {
+      text-decoration: underline;
+  }
+  
+  .author-block {
+    display: inline-block;
+  }
+  
+  .publication-banner img {
+  }
+  
+  .publication-authors {
+    /*color: #4286f4;*/
+  }
+  
+  .publication-video {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+  
+      overflow: hidden;
+      border-radius: 10px !important;
+  }
+  
+  .publication-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .publication-body img {
+  }
+  
+  .results-carousel {
+    overflow: hidden;
+  }
+  
+  .results-carousel .item {
+    margin: 5px;
+    overflow: hidden;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 0;
+    font-size: 0;
+  }
+  
+  .results-carousel video {
+    margin: 0;
+  }
+  
+  
+  .interpolation-panel {
+    background: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .interpolation-panel .interpolation-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .interpolation-video-column {
+  }
+  table th {
+    vertical-align: middle !important;
+}
+  .interpolation-panel .slider {
+    margin: 0 !important;
+  }
+  
+  .interpolation-panel .slider {
+    margin: 0 !important;
+  }
+  
+  #interpolation-image-wrapper {
+    width: 100%;
+  }
+  #interpolation-image-wrapper img {
+    border-radius: 5px;
+  }
+  
+
+  .table-answers> tbody > tr > td {
+    vertical-align: middle;
+}
+
+.options {
+/* margin-top: 1em; */
+font-size: 0.9rem;
+list-style-type: none; /* Remove default list styling */
+
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+background-color: rgba(13,202,240, 0.2);
+}
+
+.table-answers{
+/* border: 1px solid #ddd;  */
+border-radius: 8px; /* Set border radius */
+overflow: hidden; /* Ensure content respects the rounded corners */
+}
+
+.table-answers> thead > tr > th,
+.table-answers> tbody > tr > td {
+border: none; /* Remove default cell borders for a cleaner look */
+}
+.table-striped tr{
+background-color: #fafafa;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+background-color: rgba(13,202,240, 0.2);
+}
+
+.clearfix{
+    display: none !important;
+}
+
+.sec1 h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+.options .col-md-12{
+  text-align: center;
+}
+
+.sec1{
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sec2{
+  height: 10%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3{
+  height: 55%;
+}
+.qual table td:nth-child(2){
+  text-align: center;
+} 
+.qual table td:nth-child(3){
+  text-align: right;
+} 
+.qual .col-md-3{
+  margin-bottom: 1rem;
+}
+
+.qual .table {
+  border: 1px solid #ddd; /* Add a border to the table */
+  border-radius: 8px; /* Set border radius */
+  overflow: hidden; /* Ensure content respects the rounded corners */
+}
+
+.qual .table > thead > tr > th,
+.qual .table > tbody > tr > td {
+  border: none; /* Remove default cell borders for a cleaner look */
+  vertical-align: middle;
+  padding: 0.65rem 0.75rem;
+}
+
+.qual tr img{
+  width: 2rem;
+  height: 2rem;
+}
+.qual-object .col-md-3 table{
+  font-size: 0.9rem;
+}
+.qual-object .sec2{
+  height: 14%;
+}
+
+.qual-count .sec1 img{
+  height: 94%;
+  width: 90%;
+}
+
+.qual-count .col-md-3:nth-child(3) h4{
+  font-size: 1rem;
+}
+.qual-count .sec2{
+  height: 8%;
+}
+
+.qual-event .sec1 img{
+  height: 94%;
+  width: 90%;
+}
+.qual-relation .col-md-3 h4{
+  font-size: 0.9rem;
+}
+.qual-relation .sec1 {
+  height: 35%;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: end;
+}
+.qual-relation .sec1 img{
+  height: 100%;
+  width: 90%;
+}
+.sec2 {
+  height: 15%;
+}
+
+
+/* Style the tab container */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the tab items */
+.nav-tabs .nav-link {
+  border: none;
+  color: #555;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border-radius: 0;
+  position: relative;
+}
+
+/* Add hover effect to tabs */
+.nav-tabs .nav-link:hover {
+  color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Active tab style */
+.nav-tabs .nav-link.active {
+  color: #007bff;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background-color: #007bff;
+}
+
+/* Remove gap between tabs */
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+.nav-tabs{
+  display: flex
+  ;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+}
+.qual .title{
+  display: none;
+}
+#qual-scene .sec2, #qual-event .sec2{
+  height: 10%;
+}
+
+#BibTeX {
+  margin-bottom: -80px;
+  /* Adjust the negative margin as needed */
+}
+
+#Acknowledgement {
+  margin-top: -80px;
+  /* Adjust the negative margin as needed */
+}
+.leaderboard .table{
+  border-radius: 1rem;
+    overflow: hidden;
+}
+.title-logo-con{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+.title-logo-con .publication-title{
+  margin-bottom: 0;
+}
+.title-logo-con img{
+  width: 4rem;
+  margin-right: 0.5rem;
+}
