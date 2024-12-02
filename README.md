@@ -9,13 +9,22 @@
 
 #### **Mohamed bin Zayed University of AI, University College London, Linköping University, IBM Research Europe, UK, ServiceNow Research, Australian National University**
 
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2411.19325)
+[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](http://the-ai-alliance.github.io/GEO-Bench-VLM)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-orange)](https://huggingface.co/datasets/aialliance/GEOBench-VLM)
 
 
 Official GitHub repository for  `GEOBench-VLM: Benchmarking Vision-Language Models for Geospatial Tasks`.
+---
 
-## 🛠️ Dataset and Code Coming Soon!
+## 📢 Latest Updates
+- **Dec-02-24**: We release the benchmark dataset [huggingface link](https://huggingface.co/datasets/aialliance/GEOBench-VLM). 
+- **Dec-02-24**: Arxiv Preprint is released [arxiv link](https://arxiv.org/abs/2411.19325). 🔥🔥
+---
 
-The dataset and code will be released shortly. Follow this repository for updates!
+## 🛠️ Code and Leaderboard Coming Soon!
+
+The code and leaderboard will be released shortly. Follow this repository for updates!
 
 ---
 
@@ -140,7 +149,19 @@ Referring expression detection. We report Precision on 0.5 IoU and 0.25 IoU
 
 <hr />
 
-
+## 📜 Citation
+If you find our work and this repository useful, please consider giving our repo a star and citing our paper as follows:
+```bibtex
+@article{danish2024geobenchvlm,
+      title={GEOBench-VLM: Benchmarking Vision-Language Models for Geospatial Tasks}, 
+      author={Muhammad Sohail Danish and Muhammad Akhtar Munir and Syed Roshaan Ali Shah and Kartik Kuckreja and Fahad Shahbaz Khan and Paolo Fraccaro and Alexandre Lacoste and Salman Khan},
+      year={2024},
+      eprint={2411.19325},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.19325}, 
+}
+```
 
 
 
@@ -151,6 +172,6 @@ If you have any questions, please create an issue on this repository or contact 
 ---
 [<img src="images/MBZUAI_logo.png" width="290" height="85">](https://mbzuai.ac.ae)
 [<img src="images/IVAL_logo.png" width="160" height="100">](https://www.ival-mbzuai.com)
-[<img src="images/ibm-logo.jpg" width="270">](https://github.com/mbzuai-oryx)
-[<img src="images/ServiceNow_logo.png" width="270">](https://github.com/mbzuai-oryx)
-[<img src="images/aialliance.png" width="270">](https://www.crcv.ucf.edu/)
+[<img src="images/ibm-logo.jpg" width="270">](https://research.ibm.com/labs/uk)
+[<img src="images/ServiceNow_logo.png" width="270">](https://www.servicenow.com/)
+[<img src="images/aialliance.png" width="270">](https://thealliance.ai/)
