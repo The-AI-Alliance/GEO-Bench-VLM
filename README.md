@@ -18,6 +18,7 @@ Official GitHub repository for  `GEOBench-VLM: Benchmarking Vision-Language Mode
 ---
 
 ## 📢 Latest Updates
+- **Apr-04-25**: We have evaluated recent geospatial Vision-Language Models (VLMs). 
 - **Dec-02-24**: We release the benchmark dataset [huggingface link](https://huggingface.co/datasets/aialliance/GEOBench-VLM). 
 - **Dec-02-24**: Arxiv Preprint is released [arxiv link](https://arxiv.org/abs/2411.19325). 🔥🔥
 ---
@@ -32,22 +33,23 @@ The code and leaderboard will be released shortly. Follow this repository for up
 <p align="center">
    <img src="images/teaser_bench.jpg" width="1200"></a>
 </p>
-<p align="justify"> <b> Figure</b>: Examples of tasks from the GEOBench-VLM benchmark. Our benchmark is designed to evaluate VLMs on a diverse range of remote sensing applications. The benchmark includes over 10,000 questions spanning a range of tasks essential for Earth Observation, such as Temporal Understanding, Referring Segmentation, Visual Grounding, Scene Understanding, Counting, Detailed Image Captioning, and Relational Reasoning. Each task is tailored to capture unique domain-specific challenges, featuring varied visual conditions and object scales, and requiring nuanced understanding for applications like disaster assessment, urban planning, and environmental monitoring.
+<p align="justify"> <b> Figure</b>: GEOBench-VLM comprehensively covers 31 fine-grained tasks categorized into 8 broad categories: scene and object classification, object detection, segmentation, captioning, event detection, non-optical and temporal understanding tasks.
 
-**<p align="justify"> Abstract:** While numerous recent benchmarks focus on evaluating generic Vision-Language Models (VLMs), they fall short in addressing the unique demands of geospatial applications. 
-Generic VLM benchmarks are not designed to handle the complexities of geospatial data, which is critical for applications such as environmental monitoring, urban planning, and disaster management.
-Some of the unique challenges in geospatial domain include temporal analysis for changes, counting objects in large quantities, detecting tiny objects, and understanding relationships between entities occurring in Remote Sensing imagery. 
-To address this gap in the geospatial domain, we present GEOBench-VLM, a comprehensive benchmark specifically designed to evaluate VLMs on geospatial tasks, including scene understanding, object counting, localization, fine-grained categorization, and temporal analysis. 
-Our benchmark features over 10,000 manually verified instructions and covers a diverse set of variations in visual conditions, object type, and scale.
-We evaluate several state-of-the-art VLMs to assess their accuracy within the geospatial context. 
-The results indicate that although existing VLMs demonstrate potential, they face challenges when dealing with geospatial-specific examples, highlighting the room for further improvements. 
-Specifically, the best-performing GPT4o achieves only 40\% accuracy on MCQs, which is only double the random guess performance. </p>
+**<p align="justify"> Abstract:** While numerous recent benchmarks focus on evaluating generic Vision-Language Models (VLMs), they do not effectively address the specific challenges of geospatial applications.
+Generic VLM benchmarks are not designed to handle the complexities of geospatial data, an essential component for applications such as environmental monitoring, urban planning, and disaster management.
+Key challenges in the geospatial domain include temporal change detection, large-scale object counting, tiny object detection, and understanding relationships between entities in remote sensing imagery.
+To bridge this gap, we present GEOBench-VLM, a comprehensive benchmark specifically designed to evaluate VLMs on geospatial tasks, including scene understanding, object counting, localization, fine-grained categorization, segmentation, and temporal analysis. 
+Our benchmark features over 10,000 manually verified instructions and spanning diverse visual conditions, object types, and scales.
+We evaluate several state-of-the-art VLMs to assess performance on geospatial-specific challenges. 
+The results indicate that although existing VLMs demonstrate potential, they face challenges when dealing with geospatial-specific tasks, highlighting the room for further improvements.  
+Notably, the best-performing LLaVa-OneVision achieves only 41.7\% accuracy on MCQs, slightly more than GPT-4o, which is approximately
+double the random guess performance. </p>
 
 ## 🏆 Contributions
 
-- **GEOBench-VLM Benchmark.** We introduce GEOBench-VLM, a benchmark suite designed specifically for evaluating VLMs on geospatial tasks, addressing geospatial data challenges. It covers 8 broad categories and 31 sub-tasks with over 10,000 manually verified questions.
-- **Evaluation of VLMs.**We provide a detailed evaluation of ten state-of-the-art VLMs, including generic (open and closed-source) and task-specific geospatial VLMs, highlighting their capabilities and limitations in handling geospatial tasks.
-- **Analysis of Geospatial Task Performance.** We analyze performance across a range of tasks, including scene classification, counting, change detection, relationship prediction, visual grounding, image captioning, segmentation, disaster detection, and temporal analysis, among others, providing key insights into improving VLMs for geospatial applications.
+- **GEOBench-VLM Benchmark.**  We introduce GEOBench-VLM, a benchmark suite designed specifically for evaluating VLMs on geospatial tasks, addressing geospatial data challenges. It covers **8** broad categories and **31** sub-tasks with over **10,000** manually verified instructions.
+- **Evaluation of VLMs.** We provide a detailed evaluation of **13** state-of-the-art VLMs, including generic (open and closed-source) and geospatial-specific VLMs, highlighting their capabilities and limitations in geospatial analysis.
+- **Analysis of Geospatial Task Performance.** We analyze performance across a range of tasks, including scene classification, counting, change detection, relationship prediction, referring expression detection, segmentation, image captioning, disaster detection, and temporal analysis, among others, providing key insights that can help in improving VLMs for geospatial applications.
 <hr />
 
 ## 🗂️ Benchmarks Comparison
@@ -57,12 +59,12 @@ Specifically, the best-performing GPT4o achieves only 40\% accuracy on MCQs, whi
 </p>
 
 
-> <p align="justify"> <b> <span style="color: blue;">Table</span></b>: Overview of Generic and Geospatial-specific Datasets & Benchmarks, detailing modalities (O=Optical, PAN=Panchromatic, MS=Multi-spectral, IR=Infrared, SAR=Synthetic Aperture Radar, V=Video, MI=Multi-image, BT=Bi-Temporal, MT=Multi-temporal), data sources (DRSD=Diverse RS Datasets, OSM=OpenStreetMap, GE=Google Earth, answer types (MCQ=Multiple Choice, SC=Single Choice, FF=Free-Form, BBox=Bounding Box, Seg=Segmentation Mask), and annotation types (A=Automatic, M=Manual). </p>
+<p align="justify"> <b> <span style="color: blue;">Table</span></b>: Overview of Generic and Geospatial-specific Datasets & Benchmarks, detailing modalities (O=Optical, PAN=Panchromatic, MS=Multi-spectral, IR=Infrared, SAR=Synthetic Aperture Radar, V=Video, MI=Multi-image, BT=Bi-Temporal, MT=Multi-temporal), data sources (DRSD=Diverse RS Datasets, OSM=OpenStreetMap, GE=Google Earth, answer types (MCQ=Multiple Choice, SC=Single Choice, FF=Free-Form, BBox=Bounding Box, Seg=Segmentation Mask), and annotation types (A=Automatic, M=Manual). </p>
 
 <hr />
 
 ## 🔍 Dataset Annotation Pipeline
-<p align="justify"> Our pipeline integrates diverse datasets, automated tools, and manual annotation. Tasks such as scene understanding, object classification, and non-optical analysis are based on classification datasets, while GPT-4o generates unique MCQs with five options: one correct answer, one semantically similar "closest" option, and three plausible alternatives. Spatial relationship tasks rely on manually annotated object pair relationships, ensuring consistency through cross-verification. Caption generation leverages GPT-4o, combining image, object details, and spatial interactions with manual refinement for high precision. </p>
+<p align="justify"> Our pipeline integrates diverse datasets, automated tools, and manual annotation. Tasks such as scene understanding, object classification, and non-optical analysis are based on classification datasets, while GPT-4o generates unique MCQs with five options: one correct answer, one semantically similar ``closest" option, and three plausible alternatives. Spatial relationship tasks rely on manually annotated object pair relationships, ensuring consistency through cross-verification. Caption generation leverages GPT-4o, combining image, object details, and spatial interactions with manual refinement for high precision.</p>
 <p align="center">
    <img src="images/pipeline7.jpg" width="1200"></a>
 </p>
@@ -73,26 +75,25 @@ Specifically, the best-performing GPT4o achieves only 40\% accuracy on MCQs, whi
 
 ## 📊 Results
 
-Performance Summary of VLMs Across Geospatial Tasks. GPT-4o achieves better accuracy in relatively easy tasks like Aircraft
-Type Classification, Disaster Type Classification, Scene Classification, and Land Use Classification. But, on average the best-performing
-GPT-4o achieves only **40%** accuracy on MCQs based on diverse geospatial tasks, which is only double the random guess performance.
-These results showcase the varying strengths of VLMs in addressing diverse geospatial tasks.
+Performance summary of VLMs. LLaVA-OneVision achieves the average accuracy (**41.7\%**), slightly outperforming GPT-4o, which is relatively better in building counting, and general aircraft counting. EarthDial demonstrates strong results in scene classification. The overall results highlight VLMs' varying strengths across geospatial tasks, with even the best models achieving accuracy only slightly above double the random guess
 <p align="center">
-   <img src="images/benchmark_heatmap1.png" width="1200" alt="Results Heatmap"></a>
+   <img src="images/benchmark_heatmap.jpg" width="1200" alt="Results Heatmap"></a>
 </p>
 
 
 ### Temporal Understanding Results
 
-Results highlight the strengths of VLMs in handling temporal geospatial challenges. Evaluation across five tasks: Crop Type Classification, Disaster Type Classification, Farm Pond Change Detection, Land Use Classification, and Damaged Building Count. GPT-4o achieves the highest accuracy overall in classification and counting tasks.
+VLM performance on temporal geospatial tasks. Evaluation spans crop type classification, disaster type classification, farm pond change detection (CD), land use classification, and damaged building counting. 
+EarthDial performs best in land use classification, while GPT-4o achieves better performance in disaster classification and damaged building counting. Qwen2-VL stands second in disaster classification.
 
 <div align="center">
 
 | **Model**            | **Crop Type Classification** | **Disaster Type Classification** | **Farm Pond Change Detection** | **Land Use Classification** | **Damaged Building Count** |
 |---------------------|:---------------------------:|:--------------------------------:|:------------------------------:|:---------------------------:|:---------------------------:|
-| LLaVA-OneV           | 0.1273                      | 0.4493                          | **0.1579**                     | 0.5672                      | 0.2139                      |
-| Qwen2-VL             | 0.1273                      | 0.5903                          | 0.0921                         | 0.5869                      | 0.2270                      |
-| GPT-4o               | **0.1818**                  | **0.6344**                      | 0.1447                         | **0.6230**                  | **0.2420**                  |
+| EarthDial           | **0.2182**                  | 0.5727                          | **0.2105**                     | **0.6623**                  | 0.4362                      |
+| GPT-4o              | 0.1818                      | **0.6300**                      | 0.1711                         | 0.6525                      | **0.5667**                  |
+| LLaVA-OneVision     | 0.1455                      | 0.4537                          | 0.1842                         | 0.5869                      | 0.4810                      |
+| Qwen2-VL            | 0.1091                      | 0.5991                          | 0.1974                         | 0.5967                      | 0.5000                      |
 
 </div>
 
@@ -100,13 +101,17 @@ Results highlight the strengths of VLMs in handling temporal geospatial challeng
 Referring expression detection. We report Precision on 0.5 IoU and 0.25 IoU
 <div align="center">
 
-| **Model**            | **Precision@0.5 IoU** | **Precision@0.25 IoU** |
-|:---------------------:|:--------------------:|:----------------------:|
-| Sphinx               | 0.3408               | 0.5289                 |
-| GeoChat              | 0.1151               | 0.2100                 |
-| Ferret               | 0.0943               | 0.2003                 |
-| Qwen2-VL             | 0.1518               | 0.2524                 |
-| GPT-4o               | 0.0087               | 0.0386                 |
+| **Model**        | **Precision@0.5 IoU** | **Precision@0.25 IoU** |
+|:----------------:|:---------------------:|:----------------------:|
+| **Sphinx**       | **0.3408**            | **0.5289**             |
+| EarthDial        | 0.2429                | 0.4139                 |
+| GeoChat          | 0.1151                | 0.2100                 |
+| Ferret           | 0.0943                | 0.2003                 |
+| Qwen2-VL         | 0.1518                | 0.2524                 |
+| GPT-4o           | 0.0087                | 0.0386                 |
+| LHRS-Nova        | 0.0930                | 0.2423                 |
+| SkySenseGPT      | 0.1082                | 0.3224                 |
+
 
 </div>
 
