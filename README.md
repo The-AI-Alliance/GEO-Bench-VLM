@@ -18,14 +18,15 @@ Official GitHub repository for  `GEOBench-VLM: Benchmarking Vision-Language Mode
 ---
 
 ## 📢 Latest Updates
+- **Jun-30-25**: Code is released.
 - **Apr-04-25**: We have evaluated recent geospatial Vision-Language Models (VLMs). 
 - **Dec-02-24**: We release the benchmark dataset [huggingface link](https://huggingface.co/datasets/aialliance/GEOBench-VLM). 
 - **Dec-02-24**: Arxiv Preprint is released [arxiv link](https://arxiv.org/abs/2411.19325). 🔥🔥
 ---
 
-## 🛠️ Code and Leaderboard Coming Soon!
+## 🛠️ Leaderboard Coming Soon!
 
-The code and leaderboard will be released shortly. Follow this repository for updates!
+The leaderboard will be released shortly. Follow this repository for updates!
 
 ---
 
