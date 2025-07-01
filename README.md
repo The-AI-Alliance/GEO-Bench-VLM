@@ -1,5 +1,11 @@
 # GEOBench-VLM: Benchmarking Vision-Language Models for Geospatial Tasks
 
+<p><strong>🎉 Exciting News:</strong><br>
+  Our paper has been <strong>ACCEPTED to 
+  <a href="https://iccv.thecvf.com/" target="_blank">ICCV 2025 – International Conference on Computer Vision</a></strong>!
+  <br>in <strong>Honolulu, Hawaii</strong>!
+</p>
+
 <p align="center">
     <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
 </p>
@@ -158,14 +164,15 @@ Referring expression detection. We report Precision on 0.5 IoU and 0.25 IoU
 ## 📜 Citation
 If you find our work and this repository useful, please consider giving our repo a star and citing our paper as follows:
 ```bibtex
-@article{danish2024geobenchvlm,
-      title={GEOBench-VLM: Benchmarking Vision-Language Models for Geospatial Tasks}, 
-      author={Muhammad Sohail Danish and Muhammad Akhtar Munir and Syed Roshaan Ali Shah and Kartik Kuckreja and Fahad Shahbaz Khan and Paolo Fraccaro and Alexandre Lacoste and Salman Khan},
-      year={2024},
-      eprint={2411.19325},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.19325}, 
+@inproceedings{danish2025geobenchvlm,
+  title     = {GEOBench-VLM: Benchmarking Vision-Language Models for Geospatial Tasks},
+  author    = {Muhammad Sohail Danish and Muhammad Akhtar Munir and Syed Roshaan Ali Shah and Kartik Kuckreja and Fahad Shahbaz Khan and Paolo Fraccaro and Alexandre Lacoste and Salman Khan},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2411.19325},
+  archivePrefix = {arXiv},
+  eprint    = {2411.19325},
+  primaryClass = {cs.CV}
 }
 ```
 
