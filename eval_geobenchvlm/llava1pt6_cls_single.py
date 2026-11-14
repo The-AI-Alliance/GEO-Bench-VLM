@@ -25,7 +25,13 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print (device)
 model_id = "llava-hf/llava-v1.6-vicuna-7b-hf"
 
-cache_dir = "/Out_weights/models--llava-hf--llava-v1.6-vicuna-7b-hf"
+import argparse
+_parser = argparse.ArgumentParser()
+_parser.add_argument("--data_path", default="/datasets/GEOBench-VLM", help="GEOBench-VLM root (contains Single/ and Temporal/)")
+_parser.add_argument("--model_path", default=None, help="model weights folder (default: the Out_weights path below)")
+ARGS, _ = _parser.parse_known_args()
+
+cache_dir = ARGS.model_path or "/Out_weights/models--llava-hf--llava-v1.6-vicuna-7b-hf"
 pthm = cache_dir
 
 processor = LlavaNextProcessor.from_pretrained(pthm)
@@ -285,4 +291,4 @@ def main(base_folder_path):
         evaluate_folder(folder_path)
 
 if __name__ == "__main__":
-    main("/datasets/GEOBench-VLM")
+    main(ARGS.data_path)

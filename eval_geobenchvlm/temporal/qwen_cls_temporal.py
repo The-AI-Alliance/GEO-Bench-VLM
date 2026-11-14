@@ -20,7 +20,13 @@ from transformers import AutoTokenizer, AutoProcessor
 
 # model_id = "Qwen/Qwen2-VL-7B-Instruct"
 
-pth_m = '/Out_weights/Qwen2-VL-7B-Instruct'
+import argparse
+_parser = argparse.ArgumentParser()
+_parser.add_argument("--data_path", default="/datasets/GEOBench-VLM", help="GEOBench-VLM root (contains Single/ and Temporal/)")
+_parser.add_argument("--model_path", default=None, help="model weights folder (default: the Out_weights path below)")
+ARGS, _ = _parser.parse_known_args()
+
+pth_m = ARGS.model_path or "/Out_weights/Qwen2-VL-7B-Instruct"
 
 model_id = "Qwen/Qwen2-VL-7B-Instruct"
 # tokenizer = AutoTokenizer.from_pretrained(pth_m, trust_remote_code=True)
@@ -308,4 +314,4 @@ def main(base_folder_path):
         evaluate_folder(folder_path)
 
 if __name__ == "__main__":
-    main("/datasets/GEOBench-VLM")
+    main(ARGS.data_path)

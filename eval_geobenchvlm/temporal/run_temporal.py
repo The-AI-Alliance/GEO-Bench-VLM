@@ -5,7 +5,7 @@ Usage:
     python run_temporal.py <model-key> [extra args...]
 
 Example:
-    python run_temporal.py qwen /datasets/GEOBench-VLM
+    python run_temporal.py qwen --data_path /datasets/GEOBench-VLM
 
 Model keys:
     qwen        → qwen_cls_temporal.py

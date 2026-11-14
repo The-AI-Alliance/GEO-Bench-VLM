@@ -70,5 +70,24 @@ Available <model-key> options:
 python run_temporal.py qwen --data_path /datasets/GEOBench-VLM
 ```
 
+All model scripts accept `--data_path` (dataset root, containing `Single/` and `Temporal/`) and `--model_path` (weights folder; defaults to the `Out_weights/` path above). Predictions are written to `<data_path>/Results-<model>-countcls/`.
+
+<hr>
+
+### Scoring (Single)
+
+Run from folder <strong>[eval_geobenchvlm](eval_geobenchvlm)</strong>:
+
+```
+python score_single.py --data_path /datasets/GEOBench-VLM \
+    --predictions /datasets/GEOBench-VLM/Results-qwen2-countcls/evaluation_results_GEOBench-VLM.json
+```
+
+- The first English letter of each answer is taken as the predicted option. Answers without a valid option (A–E) and missing answers count as wrong.
+- The five prompts of a question are combined by majority vote (ties broken randomly, `--seed`).
+- Task accuracy is computed over all questions of the task; `Average` is the mean over tasks.
+
+Scores are printed and saved to `scores.json` next to the predictions file (or to `--output`).
+
 
 

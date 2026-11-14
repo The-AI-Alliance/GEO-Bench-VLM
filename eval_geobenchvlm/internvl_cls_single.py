@@ -14,7 +14,13 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 print (device)
 
-pth_m = "/Out_weights/InternVL2-8B"
+import argparse
+_parser = argparse.ArgumentParser()
+_parser.add_argument("--data_path", default="/datasets/GEOBench-VLM", help="GEOBench-VLM root (contains Single/ and Temporal/)")
+_parser.add_argument("--model_path", default=None, help="model weights folder (default: the Out_weights path below)")
+ARGS, _ = _parser.parse_known_args()
+
+pth_m = ARGS.model_path or "/Out_weights/InternVL2-8B"
 model_id = "OpenGVLab/InternVL2-8B" # change
 model = AutoModel.from_pretrained(
     pth_m,
@@ -282,4 +288,4 @@ def main(base_folder_path):
         evaluate_folder(folder_path)
 
 if __name__ == "__main__":
-    main("/datasets/GEOBench-VLM")
+    main(ARGS.data_path)
